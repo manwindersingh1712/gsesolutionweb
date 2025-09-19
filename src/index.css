@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  .font-forum {
+    font-family: "Forum", cursive;
+  }
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+  .font-nunito {
+    font-family: "Nunito", sans-serif;
+  }
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  overflow: hidden !important;
+}
+
+.slick-track {
+  display: flex !important;
+  width: max-content !important;
+}
+
+.slick-slide {
+  height: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.slick-slide > div {
+  height: 100% !important;
+}
+.slick-dots {
+  bottom: -30px;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ccc;
+  opacity: 1;
+}
+
+@media screen and (max-width: 440px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+}
