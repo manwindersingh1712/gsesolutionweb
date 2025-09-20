@@ -36,7 +36,7 @@ const Form = () => {
       className="w-full  h-[1300px] xl:h-[886px]  xl:m-0 m-auto xl:pt-[108px] xl:pr-[140px] xl:pb-[108px] xl:pl-[140px] "
     >
       <div className="xl:w-[1160px] w-[335px]  h-[1250px] xl:h-[670px] xl:relative opacity-100 rotate-0 mx-auto  overflow-hidden">
-        <div className="xl:w-[428px] w-[335px] h-[435px] xl:h-[529px] absolute top-4 xl:top-[69.5px] xl:left-[72px] opacity-100 flex flex-col gap-10 rotate-0 overflow-hidden">
+        <div className="xl:w-[428px] w-[335px] h-[435px] xl:h-[529px]  top-4 xl:top-[69.5px] xl:left-[72px] opacity-100 flex flex-col gap-10 rotate-0 overflow-hidden">
           <div className="flex flex-col gap-1 xl:gap-3 ">
             <h1 className="font-commissioner font-medium text-[13px] leading-[18.2px] tracking-[2px] uppercase text-[#F545A6]">
               CONTACT US
@@ -56,7 +56,7 @@ const Form = () => {
           </div>
         </div>
 
-        <div className="xl:w-[529px] w-[296px] h-[652px] xl:h-[604px] absolute top-115 xl:top-[32px] xl:left-[567px]">
+        <div className="xl:w-[529px] w-[296px] h-[652px] xl:h-[604px]  top-115 xl:top-[32px] xl:left-[567px]">
           <form onSubmit={validateForm} className="space-y-6 mt-4 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>

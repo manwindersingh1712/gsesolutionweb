@@ -131,7 +131,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`absolute top-[60px] left-0 w-full h-[320px] flex flex-col gap-[40px] p-6
+          className={`absolute xl:hidden  top-[60px] left-0 w-full h-[350px] flex flex-col gap-[40px] p-6
           bg-white shadow-md border border-gray-300 rounded-md z-50 transition-all duration-500 ease-in-out
           ${
             mobileOpen
@@ -139,7 +139,7 @@ const Navbar = () => {
               : "translate-x-full opacity-0 pointer-events-none"
           }`}
         >
-          <div className="w-full max-w-[144px] h-[200px]  flex flex-col gap-10 opacity-100 items-center ">
+          <div className="w-full max-w-[144px] h-[200px] flex flex-col gap-10 opacity-100 items-center ">
             <NavLink
               to="/"
               className="font-nunito  mr-5 font-semibold text-[18px] leading-[24px] tracking-[0%]  text-[#000018]"
@@ -176,34 +176,34 @@ const Navbar = () => {
                       : "max-h-0 opacity-0 z-0 overflow-hidden"
                   }`}
                 >
-                  <div className="p-6 relative max-w-[calc(100vw-48px)] top-8  w-full  h-[220px] bg-white  flex flex-col gap-4">
+                  <div className="p-6 relative border w-[335px] right-35   top-8 h-[220px] bg-white  flex flex-col gap-5">
                     <a
                       href="#"
-                      className="text-[14px] leading-[20px] font-normal border-b-gray-800 font-commissioner text-[#000018]"
+                      className="text-[14px] leading-[20px] font-normal border-b font-commissioner text-[#000018]"
                     >
                       Web Development
                     </a>
                     <a
                       href="#"
-                      className="text-[14px] leading-[20px] font-normal font-commissioner text-[#000018]"
+                      className="text-[14px] leading-[20px] font-normal border-b font-commissioner text-[#000018]"
                     >
                       Mobile & App Development
                     </a>
                     <a
                       href="#"
-                      className="text-[14px] leading-[20px] font-normal font-commissioner text-[#000018]"
+                      className="text-[14px] leading-[20px] font-normal border-b font-commissioner text-[#000018]"
                     >
                       AI & Machine Learning
                     </a>
                     <a
                       href="#"
-                      className="text-[14px] leading-[20px] font-normal font-commissioner text-[#000018]"
+                      className="text-[14px] leading-[20px] font-normal border-b font-commissioner text-[#000018]"
                     >
                       DevOps
                     </a>
                     <a
                       href="#"
-                      className="text-[14px] leading-[20px] font-normal font-commissioner text-[#000018]"
+                      className="text-[14px] leading-[20px] font-normal border-b font-commissioner text-[#000018]"
                     >
                       UI/UX Design
                     </a>
