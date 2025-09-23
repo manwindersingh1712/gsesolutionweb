@@ -18,7 +18,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full  m-auto  min-h-[300px]  xl:pr-[140px] xl:pb-[60px] xl:pl-[140px]">
+    <div className="w-full relative  m-auto  min-h-[300px]  xl:pr-[140px] xl:pb-[60px] xl:pl-[140px]">
+      <div className="absolute inset-0 -z-10 opacity-60 blur-[100px] bg-gradient-to-bl from-[#6449FF] via-white to-pink-400  "></div>
       <div className="xl:w-[1165px]  w-[335px] m-auto  relative ">
         <div className="xl:flex xl:gap-22">
           <div className="flex flex-col gap-6 xl:gap-10 xl:w-[264px] w-[335px] m-auto xl:m-0 h-auto">

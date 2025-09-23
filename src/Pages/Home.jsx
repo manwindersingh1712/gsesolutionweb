@@ -16,7 +16,7 @@ const Home = () => {
       <Navbar />
       <Main page="home" />
       <Skills />
-      <section className="xl:mt-18 mt-20">
+      <section className="xl:mt-18 mt-28">
         <Mission />
       </section>
       <Courses2 page="home" />

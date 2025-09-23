@@ -104,7 +104,7 @@ const Main = ({ page }) => {
       )}
 
       {page === "about" && (
-        <div className="relative  xl:w-[1206px]  mt-10 xl:mt-10 xl:h-[539px] xl:m-auto   ">
+        <div className="relative overflow-hidden xl:w-[1206px]   mt-5 xl:mt-10 xl:h-[539px] xl:m-auto   ">
           <div className="xl:absolute xl:top-[1px]   xl:ml-6 xl:w-[1160px] xl:mt-12 xl:h-[442px]    xl:flex xl:flex-col xl:gap-[32px] w-[335px] h-[683px] relative top-8 mx-auto flex flex-col gap-1">
             <div className="xl:absolute   xl:top-[40px] xl:min-w-[516px]  xl:max-h-[338px]  xl:flex xl:flex-col xl:gap-[15px] max-w-[335px] h-[365px] flex flex-col gap-1">
               <div className="xl:w-[255px] xl:h-[22px] text-[rgba(245,69,166,1)] opacity-100 font-commissioner font-medium xl:text-[14px] text-[16px] uppercase text-left">
@@ -140,7 +140,7 @@ const Main = ({ page }) => {
               <img
                 src={AboutUs}
                 alt="Main"
-                className="xl:absolute  xl:max-w-[470px] xl:max-h-[360px]  xl:mt-1 xl:left-[660px] relative mt-20 mx-auto"
+                className="xl:absolute  xl:max-w-[470px] xl:max-h-[360px]  xl:mt-1 xl:left-[660px] relative mt-10 mx-auto"
               />
             </div>
           </div>

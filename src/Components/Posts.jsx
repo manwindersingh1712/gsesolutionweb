@@ -39,7 +39,7 @@ const Posts = () => {
   };
 
   return (
-    <div className="w-full   xl:m-0 m-auto relative xl:mb-10 mt-10 xl:mt-0 xl:pt-[30px] xl:pr-[140px] xl:pb-[108px] xl:pl-[140px] overflow-hidden">
+    <div className="w-full   xl:m-0 m-auto relative xl:mb-10 mt-10 xl:mt-0 xl:pt-[10px] xl:pr-[140px] xl:pb-[108px] xl:pl-[140px] overflow-hidden">
       <div className="relative mx-auto w-[335px]  xl:w-[1160px] h-auto">
         <div className="flex flex-col items-center justify-center gap-2 xl:gap-4">
           <div className="w-[114px] h-[22px] font-commissioner font-medium text-[14px] text-center uppercase text-[#F545A6]">

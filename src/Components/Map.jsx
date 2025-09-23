@@ -13,8 +13,8 @@ const Map = () => {
   };
 
   return (
-    <div className="xl:w-full w-[375px] m-auto xl:m-0 xl:pt-8 xl:mt-0 mt-10 xl:pr-[140px] xl:pb-12 xl:pl-[140px]">
-      <div className="relative mx-auto  xl:mt-30 xl:mb-20 flex flex-col gap-[40px] xl:w-[484px] w-[335px] overflow-hidden">
+    <div className="xl:w-full w-[375px] m-auto xl:m-0 xl:pt-8 xl:mt-0 mt-10 border xl:pr-[140px] xl:pb-12 xl:pl-[140px]">
+      <div className="relative mx-auto    flex flex-col gap-[40px] xl:w-[484px] w-[335px] overflow-hidden">
         <div className="xl:w-[210px] m-auto font-montserrat font-bold xl:text-[32px] text-[26px] text-center text-black">
           <span className="text-[#6449FF]"> Visit</span> us here
         </div>

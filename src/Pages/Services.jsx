@@ -19,10 +19,10 @@ const Services = () => {
       <section className="xl:mt-10 ">
         <Values />
       </section>
-      <section className="mt-10 xl:mt-0 ">
+      <section className="mt-25 xl:mt-0 ">
         <Form />
       </section>
-      <section className="xl:mt-0 mt-20">
+      <section className="xl:mt-0 mt-10">
         <Footer />
       </section>
     </div>

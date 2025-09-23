@@ -14,7 +14,7 @@ const About = () => {
     <div>
       <Navbar />
       <Main page="about" />
-      <section className="xl:mt-0 mt-12">
+      <section className="xl:mt-0 mt-25">
         <Mission />
       </section>
       <Approach />
@@ -22,10 +22,10 @@ const About = () => {
       <section className="xl:mt-0 mt-20">
         <Values />
       </section>
-      <section className="xl:mt-0 mt-20">
+      <section className="xl:mt-0 mt-25">
         <Form />
       </section>
-      <section className="xl:mt-0 mt-20">
+      <section className="xl:mt-0 mt-15">
         <Footer />
       </section>
     </div>
