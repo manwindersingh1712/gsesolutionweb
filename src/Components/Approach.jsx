@@ -36,7 +36,7 @@ const Approach = () => {
         <div className="absolute xl:w-[380px] w-[238px] h-[520px] top-[70px] xl:top-[1px] left-[80px] xl:left-[1500px] bg-gradient-to-tr from-[#F545A6] to-[#FF8DCB] blur-[140px] opacity-50 rounded-[77px] rotate-180"></div>
 
         <div className=" xl:w-[1160px] w-[335px]  m-auto xl:pt-12 xl:pb-12 mt-20 overflow-hidden">
-          <div className="flex flex-col w-full xl:w-[1160px] border items-center justify-center gap-2">
+          <div className="flex flex-col w-full xl:w-[1160px]  items-center justify-center gap-3">
             <div className="xl:w-[133px] w-[108px] h-[18px] xl:h-[22px] font-commissioner font-medium xl:text-[14px] text-[12px] text-center uppercase text-[#ffffff] flex items-center justify-center gap-2">
               OUR APPROACH
             </div>

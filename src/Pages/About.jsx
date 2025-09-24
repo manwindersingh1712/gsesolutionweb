@@ -14,7 +14,8 @@ const About = () => {
     <div>
       <Navbar />
       <Main page="about" />
-      <section className="xl:mt-0 mt-25">
+      <Skills />
+      <section className="xl:mt-20 mt-25">
         <Mission />
       </section>
       <Approach />

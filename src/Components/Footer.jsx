@@ -62,7 +62,7 @@ const Footer = () => {
                 <div key={index}>
                   <button
                     onClick={() => toggleAccordion(index)}
-                    className={`w-full text-left  flex justify-between items-center  border-b px-5 py-4 transition-colors bg-white hover:bg-gray-300 ${
+                    className={`w-full text-left relative    flex justify-between items-center   px-5 py-4 transition-colors   ${
                       openIndex === index
                         ? "bg-gray-300 text-gray-800"
                         : "bg-gray-200 text-gray-600"

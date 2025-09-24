@@ -82,9 +82,9 @@ const Testimonials = () => {
 
         <button
           onClick={() => sliderRef.current.slickPrev()}
-          className="hidden xl:flex absolute cursor-pointer top-1/2 left-3  transform -translate-y-1/2 w-[48px] h-[48px] items-center rounded-3xl p-4 justify-center text-white bg-[rgba(100,73,255,1)]"
+          className=" absolute cursor-pointer top-90 xl:top-1/2 xl:left-3 xl:right-0 right-82  transform -translate-y-1/2 xl:w-[48px] w-[25px] xl:h-[48px] h-[25px] items-center rounded-3xl p-1 xl:p-4 justify-center text-white bg-[rgba(100,73,255,1)]"
         >
-          <FaChevronLeft className="w-[48px]  h-[48px]" />
+          <FaChevronLeft className="xl:w-[48px]  xl:h-[48px]" />
         </button>
 
         <div className="flex relative  overflow-hidden  w-full">
@@ -92,7 +92,7 @@ const Testimonials = () => {
             {testimonials.map((t) => (
               <div
                 key={t.id}
-                className="flex flex-col m-auto items-center justify-center gap-6 w-full xl:w-[820px]  xl:p-6"
+                className="flex flex-col m-auto items-center justify-center gap-8 w-full xl:w-[820px]  xl:p-6"
               >
                 <div className="flex  min-h-[240px] w-[335px] xl:w-[820px] p-6 xl:p-8 ">
                   <p className="font-montserrat font-semibold text-[20px] xl:text-[32px] xl:leading-[48px] text-center text-[#000018]">
@@ -101,7 +101,7 @@ const Testimonials = () => {
                 </div>
                 <img
                   src={t.image}
-                  className="hidden xl:flex opacity-0 xl:opacity-100 w-[300px] h-[300px] absolute top-20 -z-10 xl:ml-280  rounded-[77px]"
+                  className=" w-[300px] h-[300px] absolute top-5 -z-10 xl:ml-280  rounded-[77px]"
                 />
                 <h3 className="mt-4 font-commissioner font-semibold text-[20px] xl:text-[20px] text-center text-[#000018]">
                   {t.name}
@@ -116,12 +116,12 @@ const Testimonials = () => {
 
         <button
           onClick={() => sliderRef.current.slickNext()}
-          className="hidden xl:flex absolute cursor-pointer top-1/2 right-2 transform -translate-y-1/2 w-[48px] h-[48px] items-center justify-center  text-white bg-[rgba(100,73,255,1)] rounded-3xl p-4"
+          className=" absolute cursor-pointer top-90 xl:top-1/2 xl:right-2 xl:left-0 left-82 transform -translate-y-1/2 xl:w-[48px] w-[25px] h-[25px] xl:h-[48px] items-center justify-center  text-white bg-[rgba(100,73,255,1)] rounded-3xl p-1 xl:p-4"
         >
-          <FaChevronRight className="w-[48px] h-[48px]" />
+          <FaChevronRight className="xl:w-[48px] xl:h-[48px] " />
         </button>
 
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center  gap-2">
           <p className="font-commissioner font-medium text-[18px] text-center text-[#000018]">
             Want to start your journey towards Digital Success?
           </p>

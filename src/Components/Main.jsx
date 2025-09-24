@@ -140,7 +140,7 @@ const Main = ({ page }) => {
               <img
                 src={AboutUs}
                 alt="Main"
-                className="xl:absolute  xl:max-w-[470px] xl:max-h-[360px]  xl:mt-1 xl:left-[660px] relative mt-10 mx-auto"
+                className="xl:absolute  xl:max-w-[540px] xl:max-h-[360px]   xl:mt-1 xl:left-[660px] relative mt-10 mx-auto"
               />
             </div>
           </div>

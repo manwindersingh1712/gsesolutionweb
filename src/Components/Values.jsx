@@ -37,12 +37,12 @@ const Values = () => {
 
   return (
     <div className="w-full  overflow-x-hidden min-h-[1300px] xl:min-h-[700px] m-auto xl:m-0 xl:pt-12 xl:pr-[140px] xl:pb-12 xl:pl-[140px] overflow-hidden">
-      <div className="relative mx-auto xl:mt-20 xl:mb-20 flex flex-col gap-[56px] xl:w-[1160px]  w-[335px] h-[1290px] xl:h-[435px] overflow-hidden">
-        <div className="flex flex-col items-center justify-center xl:gap-2 gap-1">
+      <div className="relative mx-auto xl:mt-20 xl:mb-20 flex flex-col gap-[30px] xl:w-[1160px]   w-[335px] h-[1290px] xl:h-[435px] overflow-hidden">
+        <div className="flex flex-col items-center justify-center xl:gap-3 gap-3">
           <div className="xl:w-[157px] xl:h-[22px] w-[139px] h-[18px] font-commissioner font-medium xl:text-[14px] text-[12px] text-center uppercase text-[#F545A6]">
             OUR CORE VALUES
           </div>
-          <div className="text-center xl:w-[472px] w-[335px] h-[76px] xl:h-[44px] font-montserrat font-bold xl:text-[32px] text-[24px] leading-[44px] text-[#000018]">
+          <div className="text-center xl:w-[472px] w-[335px] h-[76px] xl:h-[44px] font-montserrat font-bold xl:text-[32px] text-[24px] xl:leading-[44px] text-[#000018]">
             Why Choose <span className="text-[rgba(100,73,255,1)]"> GSE </span>{" "}
             Solutions?
           </div>
@@ -53,7 +53,7 @@ const Values = () => {
         </div>
 
         <div className="overflow-hidden">
-          <div className="xl:w-[1160px] xl:h-[220px]  w-[199px] m-auto xl:m-0 h-[1100px] xl:flex gap-10 justify-center mt-2 xl:mt-5">
+          <div className="xl:w-[1160px] xl:h-[220px]  w-[199px] m-auto xl:m-0 h-[1100px] xl:flex gap-8  justify-center mt-2 xl:mt-5">
             {ValueData.map((value, index) => (
               <div key={index}>
                 <div className="min-w-[180px]  min-h-[203px]  flex flex-col justify-center items-center gap-1">
@@ -73,7 +73,7 @@ const Values = () => {
             <button>
               <a
                 href="#formSection"
-                className="relative text-center m-auto xl:hidden w-46 h-[48px] top-[10px] left-1 opacity-100 flex gap-[10px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] 
+                className="relative text-center m-auto xl:hidden w-46 h-[48px] top-[25px] left-1 opacity-100 flex gap-[10px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] 
                               rounded-[8px] bg-[#000018] transition-all duration-100ms ease-out hover:bg-[#6449FF] hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] duration-300
                               text-[rgba(255,255,255,1)] font-commissioner font-semibold text-[16px] cursor-pointer leading-[24px] rotate-0 items-center justify-center"
               >

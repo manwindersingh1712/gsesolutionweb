@@ -27,18 +27,20 @@ const Mission = () => {
 
   return (
     <div className="w-full  overflow-x-hidden ">
-      <div className="xl:max-w-[1160px] xl:mt-20 max-w-[335px]  mx-auto  flex flex-col items-center gap-4 ">
-        <div className="font-commissioner  font-medium text-[12px] xl:text-[14px] uppercase text-[#F545A6] text-center">
-          OUR MISSION
+      <div className="xl:max-w-[1160px] xl:mt-20 xl:pt-10 xl:pb-12 max-w-[335px]  mx-auto  flex flex-col items-center gap-4 ">
+        <div className="flex flex-col text-center justify-center items-center gap-4">
+          <div className="font-commissioner  font-medium text-[12px] xl:text-[14px] uppercase text-[#F545A6] text-center">
+            OUR MISSION
+          </div>
+          <h2 className="font-montserrat  xl:w-[412px] xl:h-[44px] w-[300px]   font-bold text-[24px] xl:text-[32px] leading-[36px] xl:leading-[44px] text-[#000018] text-center">
+            Innovate. Grow. Succeed
+          </h2>
+          <p className="font-commissioner  xl:w-[894px] xl:h-[56px] w-[276px] text-[14px] xl:text-[18px] text-[#000018] text-center max-w-[894px] leading-[24px] xl:leading-[28px]">
+            At GSE Solutions, our objective is to empower businesses by
+            delivering innovative technical solutions that cater to the dynamic
+            needs of the modern world.
+          </p>
         </div>
-        <h2 className="font-montserrat  xl:w-[412px] xl:h-[44px] w-[300px]   font-bold text-[24px] xl:text-[32px] leading-[36px] xl:leading-[44px] text-[#000018] text-center">
-          Innovate. Grow. Succeed
-        </h2>
-        <p className="font-commissioner  xl:w-[894px] xl:h-[56px] w-[276px] text-[14px] xl:text-[18px] text-[#000018] text-center max-w-[894px] leading-[24px] xl:leading-[28px]">
-          At GSE Solutions, our objective is to empower businesses by delivering
-          innovative technical solutions that cater to the dynamic needs of the
-          modern world.
-        </p>
 
         <div className="grid grid-cols-1  xl:grid-cols-3 gap-4 xl:gap-14 mt-14 w-full">
           {MissionsData.map((mission, index) => (

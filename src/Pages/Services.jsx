@@ -16,9 +16,7 @@ const Services = () => {
       <Main page="services" />
       <Skills />
       <Courses2 page="services" />
-      <section className="xl:mt-10 ">
-        <Values />
-      </section>
+      <Values />
       <section className="mt-25 xl:mt-0 ">
         <Form />
       </section>

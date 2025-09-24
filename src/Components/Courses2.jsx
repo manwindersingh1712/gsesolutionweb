@@ -59,7 +59,7 @@ const Courses2 = ({ page }) => {
           className="relative mx-auto xl:mt-20  mt-8 flex flex-col justify-center items-center w-full  h-[3230px] xl:h-[2850px] opacity-100 "
         >
           <div className="absolute xl:top-18 m-auto top-20  flex flex-col xl:gap-[50px] xl:w-[1160px]  w-[335px] xl:h-[2600px] opacity-100 ">
-            <div className="flex flex-col items-center justify-center gap-2">
+            <div className="flex flex-col items-center justify-center gap-3">
               <div className="xl:w-[122px] w-[108px] h-[18px] xl:h-[22px] font-commissioner font-medium xl:text-[14px] text-[12px] text-center uppercase text-[#000018]">
                 OUR SERVICES
               </div>
@@ -113,14 +113,14 @@ const Courses2 = ({ page }) => {
       )}
 
       {page === "home" && (
-        <div id="home" className="relative w-full mt-15  bg-[rgba(0,0,24,1)] ">
+        <div id="home" className="relative w-full mt-20  bg-[rgba(0,0,24,1)] ">
           <div className="absolute xl:w-[492px] h-[520px] xl:top-[700px] top-[500px] right-20 xl:right-0 xl:left-[20px] blur-[140px] opacity-50 bg-gradient-to-tr from-[#6449FF] to-[#A688FF]"></div>
-          <div className="absolute xl:w-[380px] w-[238px] h-[520px] top-[70px] xl:top-[1px] left-[80px] xl:left-[1300px] bg-gradient-to-tr from-[#F545A6] to-[#FF8DCB] blur-[140px] opacity-50 rounded-[77px] rotate-180"></div>
+          <div className="absolute xl:w-[380px] w-[238px] h-[420px] top-[70px] xl:top-[160px] blur-[140px] opacity-50  left-[80px] xl:left-[1300px] bg-gradient-to-tr from-[#F545A6]  to-[#FF8DCB] rounded-[77px] rotate-180"></div>
 
           <section className="relative mx-auto xl:w-[1160px] w-[335px] text-white py-20">
             <div className="flex flex-col xl:flex-row gap-14">
               <div className="flex flex-col xl:w-[552px] w-full gap-14">
-                <div className="flex flex-col gap-2 text-center xl:text-left">
+                <div className="flex flex-col gap-3 text-center xl:text-left">
                   <h1 className="font-commissioner font-medium text-[12px] xl:text-[14px] uppercase tracking-[2px]">
                     Our Services
                   </h1>

@@ -25,9 +25,9 @@ const Founder = () => {
   ];
 
   return (
-    <div className="xl:w-full w-[375px]    m-auto xl:m-0 xl:pt-8 xl:mt-0 mt-25 xl:pr-[140px] xl:pb-12 xl:pl-[140px]">
-      <div className="relative mx-auto   xl:mt-30  xl:mb-20 flex flex-col gap-[80px] xl:w-[1160px] w-[335px] overflow-hidden">
-        <div className="flex flex-col  items-center justify-center xl:gap-6 gap-1">
+    <div className="xl:w-full w-[375px]    m-auto xl:m-0 xl:pt-8 xl:mt-0 mt-25 xl:pr-[140px] xl:pb-2 xl:pl-[140px]">
+      <div className="relative mx-auto   xl:mt-30   flex flex-col gap-[50px]  xl:w-[1160px] w-[335px] overflow-hidden">
+        <div className="flex flex-col  items-center justify-center xl:gap-6 gap-3">
           <div className="xl:w-[157px] xl:h-[22px] w-[139px] h-[18px] font-commissioner font-medium xl:text-[14px] text-[12px] text-center uppercase text-[#F545A6]">
             OUR TEAM
           </div>
@@ -43,7 +43,7 @@ const Founder = () => {
           {FounderData.map((founder, index) => (
             <div
               key={index}
-              className=" flex flex-col  min-w-[250px] justify-center  items-center p-6 rounded-lg shadow-sm"
+              className=" flex flex-col  min-w-[250px] justify-center  items-center p-6 rounded-lg  shadow-sm"
             >
               <img
                 src={founder.image}

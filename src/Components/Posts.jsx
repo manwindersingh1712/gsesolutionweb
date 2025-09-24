@@ -41,7 +41,7 @@ const Posts = () => {
   return (
     <div className="w-full   xl:m-0 m-auto relative xl:mb-10 mt-10 xl:mt-0 xl:pt-[10px] xl:pr-[140px] xl:pb-[108px] xl:pl-[140px] overflow-hidden">
       <div className="relative mx-auto w-[335px]  xl:w-[1160px] h-auto">
-        <div className="flex flex-col items-center justify-center gap-2 xl:gap-4">
+        <div className="flex flex-col items-center justify-center gap-3 xl:gap-4">
           <div className="w-[114px] h-[22px] font-commissioner font-medium text-[14px] text-center uppercase text-[#F545A6]">
             LATEST POSTS
           </div>
@@ -94,7 +94,7 @@ const Posts = () => {
             {blogData.map((blog, index) => (
               <div
                 key={index}
-                className="w-[335px] h-auto rounded-[12px] bg-white shadow-[0px_15px_55px_-5px_rgba(100,73,255,0.2)] mx-auto overflow-hidden"
+                className="w-[335px] h-auto shadow-sm  rounded-[12px] bg-white  mx-auto overflow-hidden"
               >
                 <div className="w-[295px] h-[186px] rounded-[8px] bg-[#bfbfbf] mt-5 mx-auto"></div>
                 <div className="flex flex-col mt-5 gap-1 px-5">
@@ -109,12 +109,10 @@ const Posts = () => {
                   </p>
                 </div>
                 <div className="px-5 mt-5 mb-5">
-                  <div className="w-[149px] h-[40px] flex gap-[10px] items-center rounded-[8px] p-[16px] bg-[rgba(236,233,255,1)] cursor-pointer">
-                    <p className="text-[#6449FF] text-[15px] font-semibold font-commissioner">
-                      Read More
-                    </p>
-                    <FaArrowRightLong className="text-[#6449FF]" />
-                  </div>
+                  <button className="w-[149px] h-[40px] items-center cursor-pointer text-[#6449FF] text-[15px] font-semibold font-commissioner flex gap-[10px] rounded-[8px] p-[16px] bg-[rgba(236,233,255,1)] hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] transition duration-300">
+                    Read More
+                    <RxArrowTopRight className="text-[#6449FF]" />
+                  </button>
                 </div>
               </div>
             ))}
