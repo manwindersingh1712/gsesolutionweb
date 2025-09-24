@@ -48,12 +48,15 @@ html {
   justify-content: center !important;
   align-items: center !important;
 }
+
 .slick-slide > div {
   height: 100% !important;
 }
+
 .slick-dots {
   bottom: -30px;
 }
+
 .slick-dots li button:before {
   font-size: 12px;
   color: #ccc;

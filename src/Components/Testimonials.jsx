@@ -1,17 +1,9 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import {
-  FaArrowRightLong,
-  FaChevronLeft,
-  FaChevronRight,
-} from "react-icons/fa6";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import company from "../img/Negative.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {
-  TbSquareRoundedArrowLeftFilled,
-  TbSquareRoundedArrowRightFilled,
-} from "react-icons/tb";
 import { RxArrowTopRight } from "react-icons/rx";
 
 const Testimonials = () => {
@@ -55,6 +47,7 @@ const Testimonials = () => {
     accessibility: true,
     focusOnSelect: true,
     dots: true,
+    swipeToSlide: true,
     pauseOnHover: false,
     variableWidth: true,
     appendDots: (dots) => (
@@ -63,45 +56,47 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="relative w-full  min-h-[850px] xl:min-h-[750px] mt-16 overflow-x-hidden xl:mt-0">
-      <div className="absolute inset-0 -z-10 opacity-50 bg-gradient-to-bl from-pink-400 via-white to-[#6449FF]"></div>
+    <section className="relative w-full min-h-[850px] xl:min-h-[750px] mt-16 overflow-x-hidden xl:mt-0">
+      <div className="absolute inset-0 -z-10 opacity-50 bg-gradient-to-bl from-pink-400 via-white to-[#6449FF]" />
 
-      <div className="relative max-w-[335px] xl:max-w-[1160px] mx-auto  xl:px-[140px]  flex flex-col gap-14 items-center pt-10 pb-20">
+      <div className="relative max-w-[335px] xl:max-w-[1160px] mx-auto xl:px-[140px] flex flex-col gap-14 items-center pt-10 pb-20">
+        {/* Heading */}
         <div className="flex flex-col items-center gap-2">
           <div className="text-[#F545A6] font-commissioner font-medium text-[16px] xl:text-[14px] uppercase">
             TESTIMONIALS
           </div>
           <div className="text-center font-montserrat font-bold text-[24px] xl:text-[32px] w-[335px] xl:w-[644px]">
             What Our{" "}
-            <span className="text-[#F545A6] xl:text-[rgba(100,73,255,1)]">
-              Customers
-            </span>{" "}
+            <span className="text-[#F545A6] xl:text-[#6449FF]">Customers</span>{" "}
             Have To Say!
           </div>
         </div>
 
+        {/* Prev Button */}
         <button
           onClick={() => sliderRef.current.slickPrev()}
-          className=" absolute cursor-pointer top-90 xl:top-1/2 xl:left-3 xl:right-0 right-82  transform -translate-y-1/2 xl:w-[48px] w-[25px] xl:h-[48px] h-[25px] items-center rounded-3xl p-1 xl:p-4 justify-center text-white bg-[rgba(100,73,255,1)]"
+          className="absolute cursor-pointer top-90 xl:top-1/2 xl:left-3 xl:right-0 right-82 transform -translate-y-1/2 xl:w-[48px] w-[25px] xl:h-[48px] h-[25px] items-center rounded-3xl p-1 xl:p-4 justify-center text-white bg-[rgba(100,73,255,1)]"
         >
-          <FaChevronLeft className="xl:w-[48px]  xl:h-[48px]" />
+          <FaChevronLeft className="xl:w-[20px] xl:h-[20px]" />
         </button>
 
-        <div className="flex relative  overflow-hidden  w-full">
+        {/* Slider */}
+        <div className=" relative overflow-hidden w-[335px] xl:w-[820px]">
           <Slider ref={sliderRef} {...settings}>
             {testimonials.map((t) => (
               <div
                 key={t.id}
-                className="flex flex-col m-auto items-center justify-center gap-8 w-full xl:w-[820px]  xl:p-6"
+                className="flex flex-col m-auto items-center justify-center gap-8 xl:p-6"
+                style={{ display: "inline-block" }}
               >
-                <div className="flex  min-h-[240px] w-[335px] xl:w-[820px] p-6 xl:p-8 ">
+                <div className="flex min-h-[240px] w-[335px] xl:w-[820px] p-6 xl:p-8">
                   <p className="font-montserrat font-semibold text-[20px] xl:text-[32px] xl:leading-[48px] text-center text-[#000018]">
                     {t.testimonial}
                   </p>
                 </div>
                 <img
                   src={t.image}
-                  className=" w-[300px] h-[300px] absolute top-5 -z-10 xl:ml-280  rounded-[77px]"
+                  className="w-[300px] h-[300px] absolute top-5 -z-10 xl:ml-280 rounded-[77px]"
                 />
                 <h3 className="mt-4 font-commissioner font-semibold text-[20px] xl:text-[20px] text-center text-[#000018]">
                   {t.name}
@@ -114,27 +109,25 @@ const Testimonials = () => {
           </Slider>
         </div>
 
+        {/* Next Button */}
         <button
           onClick={() => sliderRef.current.slickNext()}
-          className=" absolute cursor-pointer top-90 xl:top-1/2 xl:right-2 xl:left-0 left-82 transform -translate-y-1/2 xl:w-[48px] w-[25px] h-[25px] xl:h-[48px] items-center justify-center  text-white bg-[rgba(100,73,255,1)] rounded-3xl p-1 xl:p-4"
+          className="absolute cursor-pointer top-90 xl:top-1/2 xl:right-2 xl:left-260 left-82 transform -translate-y-1/2 xl:w-[48px] w-[25px] h-[25px] xl:h-[48px] items-center justify-center text-white bg-[rgba(100,73,255,1)] rounded-3xl p-1 xl:p-4"
         >
-          <FaChevronRight className="xl:w-[48px] xl:h-[48px] " />
+          <FaChevronRight className="xl:w-[20px] xl:h-[20px]" />
         </button>
 
-        <div className="flex flex-col items-center  gap-2">
+        {/* CTA */}
+        <div className="flex flex-col items-center gap-2">
           <p className="font-commissioner font-medium text-[18px] text-center text-[#000018]">
             Want to start your journey towards Digital Success?
           </p>
-          <button>
-            <a
-              href="#formSection"
-              className="relative text-center w-[184px] h-[48px] top-[20px] opacity-100 flex gap-[10px] px-[32px] py-[16px]
-                                      rounded-[8px] hover:bg-white hover:text-[#6449FF] transition-all ease-out bg-[#6449FF] hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] duration-300
-                                      text-[rgba(255,255,255,1)] font-commissioner font-semibold text-[16px] cursor-pointer leading-[24px] items-center justify-center"
-            >
-              Contact Us <RxArrowTopRight />
-            </a>
-          </button>
+          <a
+            href="#formSection"
+            className="relative text-center w-[184px] h-[48px] top-[20px] flex gap-[10px] px-[32px] py-[16px] rounded-[8px] hover:bg-white hover:text-[#6449FF] transition-all ease-out bg-[#6449FF] hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] duration-300 text-white font-commissioner font-semibold text-[16px] cursor-pointer leading-[24px] items-center justify-center"
+          >
+            Contact Us <RxArrowTopRight />
+          </a>
         </div>
       </div>
     </section>

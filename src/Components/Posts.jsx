@@ -94,10 +94,10 @@ const Posts = () => {
             {blogData.map((blog, index) => (
               <div
                 key={index}
-                className="w-[335px] h-auto shadow-sm  rounded-[12px] bg-white  mx-auto overflow-hidden"
+                className="w-[335px]  min-h-[550px] shadow-sm  rounded-[12px] bg-white  mx-auto overflow-hidden"
               >
                 <div className="w-[295px] h-[186px] rounded-[8px] bg-[#bfbfbf] mt-5 mx-auto"></div>
-                <div className="flex flex-col mt-5 gap-1 px-5">
+                <div className="flex flex-col justify-center  mt-5 gap-3 px-5">
                   <p className="text-[14px] font-medium uppercase font-commissioner text-[#f545a6] leading-[22px]">
                     {blog.date}
                   </p>
