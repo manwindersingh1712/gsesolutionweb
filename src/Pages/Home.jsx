@@ -21,7 +21,7 @@ const Home = () => {
       </section>
       <Courses2 page="home" />
       <section className="xl:mt-0 mt-12">
-        <Values />
+        <Values page="home" />
       </section>
       <Testimonials />
       <section className="xl:mt-15 mt-15">

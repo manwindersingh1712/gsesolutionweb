@@ -1,7 +1,7 @@
 import React from "react";
 import MainPic from "../img/main.svg";
 import Hero from "../img/Hero2.svg";
-import arrow from "../img/image.svg";
+import arrow from "../img/arrow.svg";
 import AboutUs from "../img/AboutUs.svg";
 import { RxArrowTopRight } from "react-icons/rx";
 
@@ -52,7 +52,7 @@ const Main = ({ page }) => {
                 <img
                   src={arrow}
                   alt="arrow"
-                  className="xl:absolute xl:w-[200px] xl:h-[60px] xl:top-[400px] xl:left-[230px] xl:rotate-6 xl:mix-blend-difference xl:flex hidden"
+                  className="xl:absolute xl:w-[350px]  xl:h-[100px] xl:top-[380px] xl:left-[180px] xl:rotate-2 xl:mix-blend-difference xl:flex hidden"
                 />
               </>
             </div>

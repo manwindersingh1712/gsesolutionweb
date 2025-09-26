@@ -6,9 +6,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { RxArrowTopRight } from "react-icons/rx";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false); // desktop dropdown
-  const [mobileOpen, setMobileOpen] = useState(false); // mobile menu
-  const [openIndex, setOpenIndex] = useState(null); // mobile accordion
+  const [open, setOpen] = useState(false);
+  let timeoutId;
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -54,28 +55,48 @@ const Navbar = () => {
 
                 <div
                   className="relative inline-block"
-                  onMouseEnter={() => setOpen(true)}
-                  onMouseLeave={() => setOpen(false)}
+                  onMouseEnter={() => {
+                    clearTimeout(timeoutId); // cancel close if re-entered
+                    setOpen(true);
+                  }}
+                  onMouseLeave={() => {
+                    timeoutId = setTimeout(() => setOpen(false), 100); // delay close
+                  }}
                 >
                   <button className="flex items-center mt-1 px-2 cursor-pointer">
                     <FaAngleDown className="w-[16px] h-[14px]" />
                   </button>
 
                   {open && (
-                    <div className="mt-4 bg-white border rounded-md shadow-md absolute z-50 left-0 flex flex-col w-[250px] p-3 gap-3">
-                      <a href="#" className="text-[16px] font-commissioner">
+                    <div className="mt-4 bg-white border rounded-md shadow-md absolute z-50 left-0 flex flex-col w-[250px] p-3 gap-3 transition-opacity duration-200">
+                      <a
+                        href="#"
+                        className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                      >
                         Web Development
                       </a>
-                      <a href="#" className="text-[16px] font-commissioner">
+                      <a
+                        href="#"
+                        className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                      >
                         Mobile & App Development
                       </a>
-                      <a href="#" className="text-[16px] font-commissioner">
+                      <a
+                        href="#"
+                        className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                      >
                         AI & Machine Learning
                       </a>
-                      <a href="#" className="text-[16px] font-commissioner">
+                      <a
+                        href="#"
+                        className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                      >
                         DevOps
                       </a>
-                      <a href="#" className="text-[16px] font-commissioner">
+                      <a
+                        href="#"
+                        className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                      >
                         UI/UX Design
                       </a>
                     </div>
@@ -98,7 +119,7 @@ const Navbar = () => {
             {location.pathname !== "/contact" && (
               <NavLink
                 to="/contact"
-                className="border hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] transition duration-300 cursor-pointer h-[48px] flex items-center gap-2 rounded-lg text-[#6449FF] px-4 bg-white shadow-[0px_15px_55px_-5px_rgba(100,73,255,0.4)] font-commissioner font-semibold text-[14px]"
+                className="border hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] transition duration-300 cursor-pointer h-[48px] flex items-center gap-2 rounded-lg text-[#6449FF] px-4 bg-white  font-commissioner font-semibold text-[14px]"
               >
                 Contact Us
                 <RxArrowTopRight className="text-[16px] text-bold" />
@@ -151,20 +172,35 @@ const Navbar = () => {
                 openIndex === 1 ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <div className="flex flex-col gap-3 mt-3 pl-4">
-                <a href="#" className="text-[14px] ">
+              <div className="flex flex-col gap-3 transition-opacity duration-200 mt-3 pl-4">
+                <a
+                  href="#"
+                  className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                >
                   Web Development
                 </a>
-                <a href="#" className="text-[14px] ">
+                <a
+                  href="#"
+                  className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                >
                   Mobile & App Development
                 </a>
-                <a href="#" className="text-[14px] ">
+                <a
+                  href="#"
+                  className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                >
                   AI & Machine Learning
                 </a>
-                <a href="#" className="text-[14px]">
+                <a
+                  href="#"
+                  className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                >
                   DevOps
                 </a>
-                <a href="#" className="text-[14px] ">
+                <a
+                  href="#"
+                  className="relative text-[16px] font-commissioner after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full"
+                >
                   UI/UX Design
                 </a>
               </div>
@@ -184,7 +220,7 @@ const Navbar = () => {
               className="border hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] w-[200px] transition duration-300 cursor-pointer h-[48px] justify-center  flex items-center gap-2 rounded-lg text-[#6449FF]  bg-white shadow-[0px_15px_55px_-5px_rgba(100,73,255,0.4)] font-commissioner font-semibold text-[16px]"
             >
               Contact Us
-              <FaArrowRightLong />
+              <RxArrowTopRight className="text-[16px] text-bold" />
             </NavLink>
           )}
         </div>

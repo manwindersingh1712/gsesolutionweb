@@ -21,14 +21,12 @@ const About = () => {
       <Approach />
       <Founder />
       <section className="xl:mt-0 mt-20">
-        <Values />
+        <Values page="about" />
       </section>
       <section className="xl:mt-0 mt-25">
         <Form />
       </section>
-      <section className="xl:mt-0 mt-15">
-        <Footer />
-      </section>
+      <Footer />
     </div>
   );
 };

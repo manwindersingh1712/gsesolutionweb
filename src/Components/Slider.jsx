@@ -33,7 +33,7 @@ const Skills = () => {
         {skills.concat(skills).map((skill, index) => (
           <div
             key={index}
-            className="flex items-center gap-[15px] mr-20 mt-4 text-center xl:px-6 px-2 h-[72px] bg-white"
+            className="flex items-center xl:gap-[15px] mr-15 xl:mr-20 mt-4 text-center xl:px-6 px-2 h-[72px] bg-white"
           >
             <span className="xl:text-[22px] text-[16px] font-medium text-gray-800 whitespace-nowrap">
               {skill}

@@ -35,9 +35,9 @@ const Form = () => {
       id="formSection"
       className="w-full  h-[1300px] xl:h-[886px]  xl:m-0 m-auto xl:pt-[90px] xl:pr-[140px] xl:pb-[108px] xl:pl-[140px] "
     >
-      <div className="xl:w-[1160px] w-[335px]  h-[1250px] xl:h-[670px] xl:flex gap-35  xl:relative opacity-100 rotate-0 mx-auto  overflow-hidden">
-        <div className="xl:w-[428px] w-[335px] h-[435px] xl:h-[529px]  top-4 xl:top-[69.5px] xl:left-[72px] opacity-100 flex flex-col gap-10 rotate-0 overflow-hidden">
-          <div className="flex flex-col gap-1 xl:gap-3 ">
+      <div className="xl:w-[1160px] w-[335px]  h-[1250px] xl:h-[670px] xl:flex gap-30   xl:relative opacity-100 rotate-0 mx-auto  overflow-hidden shadow-[0_4px_30px_rgba(0,0,0,0.1)] ">
+        <div className="xl:w-[428px] w-[335px] h-[360px] xl:h-[529px]  top-4 xl:top-[69.5px] xl:left-[72px] opacity-100 flex flex-col gap-10 rotate-0 overflow-hidden">
+          <div className="flex flex-col gap-1  xl:gap-3 ">
             <h1 className="font-commissioner font-medium text-[13px] leading-[18.2px] tracking-[2px] uppercase text-[#F545A6]">
               CONTACT US
             </h1>
@@ -51,7 +51,7 @@ const Form = () => {
           <div>
             <img
               src={FormPic}
-              className="xl:w-[394.793px] w-[295.17px] h-[240px] xl:h-[321px]"
+              className="xl:w-[394.793px]  w-[295.17px] h-[240px] xl:h-[321px]"
             />
           </div>
         </div>
@@ -158,7 +158,7 @@ const Form = () => {
 
             <button
               type="submit"
-              className="xl:w-[519px] w-[335px] font-commissioner hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] duration-300 text-[16px] bg-[rgba(0,0,24,1)] text-white font-semibold py-3 rounded-md hover:bg-[#1a1b48] transition"
+              className="xl:w-[519px] w-[335px] font-commissioner transition-all ease-out text-[16px] bg-[rgba(0,0,24,1)] text-white font-semibold py-3 rounded-md hover:bg-[#6449FF] hover:shadow-[0_0_15px_rgba(100,73,255,0.6)] duration-300"
             >
               Get a Free Quote
             </button>
