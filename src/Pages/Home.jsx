@@ -27,7 +27,7 @@ const Home = () => {
       <section className="xl:mt-15 mt-15">
         <Form />
       </section>
-      <Posts />
+      {/* <Posts /> */}
       <Updates />
       <section className="xl:mt-0 mt-10">
         <Footer />
